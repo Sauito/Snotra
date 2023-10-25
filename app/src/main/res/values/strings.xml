@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Snotra</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">"Дом"</string>
+    <string name="title_exercises">"Упражнения"</string>
+    <string name="title_diary">"Дневник"</string>
+    <string name="title_articles">"Статьи"</string>
 </resources>
