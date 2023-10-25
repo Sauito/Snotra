@@ -1,4 +1,4 @@
-package com.example.snotra.ui.home;
+package com.example.snotra.ui.articles;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.snotra.databinding.FragmentHomeBinding;
-
-public class HomeFragment extends Fragment {
-
-    private FragmentHomeBinding binding;
-
+import com.example.snotra.databinding.FragmentArticlesBinding;
+public class FragmentArticles extends Fragment {
+    private FragmentArticlesBinding binding;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        ArticlesViewModel articlesViewModel =
+                new ViewModelProvider(this).get(ArticlesViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentArticlesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textArticles;
+        articlesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
