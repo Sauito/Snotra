@@ -7,7 +7,7 @@
     tools:context=".ui.exercises.FragmentExercises">
 
     <TextView
-        android:id="@+id/text_exercises"
+        android:id="@+id/text_execrises"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

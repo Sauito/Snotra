@@ -4,11 +4,13 @@ import android.os.Bundle;
 
 import com.example.snotra.ui.first_aid.first_aid;
 import com.example.snotra.ui.settings.settings;
+import com.example.snotra.ui.articles.articles1;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import android.view.Menu;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -27,7 +29,6 @@ public class ActivityMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -45,6 +46,10 @@ public class ActivityMain extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+public void articles1 (View view){
+    Intent intent = new Intent(this, articles1.class);
+startActivity(intent);
+}
 
         @Override
         public boolean onCreateOptionsMenu (Menu menu){

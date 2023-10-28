@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.articles.articles1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="У людей с аутизмом часто отмечаются суицидальные мысли, однако до недавнего времени у исследователей не было валидированных инструментов для оценки суицидальности в этой группе пациентов. Ученые создали новый опросник под названием SBQ-ASC («Опросник для оценки суицидального поведения при состояниях аутистического спектра). Опросник был разработан на основе распространенного опросника SBQ-R, используемого в общей популяции.   Затем исследователи опросили 308 лиц взрослого возраста с аутизмом, 113 лиц с подозрением на аутизм, и 268 лиц без аутизма, чтобы оценить распространенность суицидальных мыслей в этих популяциях. Одновременно участники заполнили опросник самостоятельной оценки аутистических черт личности (AQ), опросник камуфлирования аутистических черт (CAT-Q), опросник оценки депрессии (PHQ-9), тревожности (ASA-A), опросник оценки нарушенной принадлежности к группе и субъективного чувства собственной обременительности (INQ-15), опросник для оценки несуицидальных самоповреждений, и оригинальную версию опросника суицидальности (SBQ-R). " />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

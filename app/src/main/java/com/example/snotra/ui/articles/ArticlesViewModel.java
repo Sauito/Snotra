@@ -9,7 +9,7 @@ public class ArticlesViewModel extends  ViewModel {
 
     public ArticlesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("text article");
+        mText.setValue("text text");
     }
 
     public LiveData<String> getText(){

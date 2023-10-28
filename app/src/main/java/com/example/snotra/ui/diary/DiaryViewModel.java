@@ -8,7 +8,7 @@ public class DiaryViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
     public DiaryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is");
+        mText.setValue("This is a platupus");
     }
     public LiveData<String> getText() {
         return mText;
