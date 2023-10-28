@@ -2,6 +2,7 @@ package com.example.snotra;
 
 import android.os.Bundle;
 
+import com.example.snotra.ui.first_aid.first_aid;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import android.view.View;
+import android.content.Intent;
 
 import com.example.snotra.databinding.ActivityMainBinding;
 
@@ -36,5 +39,6 @@ public class ActivityMain extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+
 
 }
