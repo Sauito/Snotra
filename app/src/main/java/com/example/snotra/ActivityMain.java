@@ -4,13 +4,14 @@ import android.os.Bundle;
 
 import com.example.snotra.ui.first_aid.first_aid;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import android.view.Menu;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import android.app.Activity;
 import android.view.View;
 import android.content.Intent;
 
@@ -42,5 +43,10 @@ public class ActivityMain extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+        @Override
+        public boolean onCreateOptionsMenu (Menu menu){
+            getMenuInflater().inflate(R.menu.top_menu, menu);
+            return true;
+        }
 
 }
