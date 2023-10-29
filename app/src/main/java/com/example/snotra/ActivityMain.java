@@ -1,12 +1,8 @@
 package com.example.snotra;
 
 import android.os.Bundle;
-
-import com.example.snotra.ui.first_aid.first_aid;
-import com.example.snotra.ui.settings.settings;
 import com.example.snotra.ui.articles.articles1;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentManager;
@@ -33,7 +29,7 @@ public class ActivityMain extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
