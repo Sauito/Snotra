@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import android.app.Activity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
@@ -61,21 +62,14 @@ startActivity(intent);
     public boolean onOptionsItemSelected(MenuItem item)
         {
             int itemId = item.getItemId();
-            FragmentManager fragmentManager = getSupportFragmentManager();
             if (itemId == R.id.item_settings) {
-                fragmentManager.beginTransaction()
-                        .replace(R.id.nav_host_fragment_activity_main, settings.class, null)
-                        .setReorderingAllowed(true)
-                        .addToBackStack("name") // Name can be null
-                        .commit();
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
                 return true;
             }
             else if (itemId == R.id.item_first_aid) {
-                fragmentManager.beginTransaction()
-                        .replace(R.id.nav_host_fragment_activity_main, first_aid.class, null)
-                        .setReorderingAllowed(true)
-                        .addToBackStack("name") // Name can be null
-                        .commit();
+               Intent intent = new Intent(this, FirstAid.class);
+               startActivity(intent);
                 return true;
             }
             return super.onOptionsItemSelected(item);

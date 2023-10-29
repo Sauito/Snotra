@@ -13,10 +13,20 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="Настройки"
+            android:parentActivityName="com.example.snotra.ActivityMain"/>
+        <activity
+            android:name=".FirstAid"
+            android:exported="false"
+            android:label="Первая помощь"
+            android:parentActivityName="com.example.snotra.ActivityMain"/>
+        <activity
             android:name=".ui.articles.articles1"
             android:exported="false"
             android:label="Статья1"
-            android:parentActivityName="com.example.snotra.ActivityMain"/>
+            android:parentActivityName=".ActivityMain" />
         <activity
             android:name=".ActivityMain"
             android:exported="true">
