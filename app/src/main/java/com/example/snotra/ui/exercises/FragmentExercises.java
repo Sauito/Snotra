@@ -23,8 +23,7 @@ public class FragmentExercises extends Fragment {
         binding = FragmentExercisesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textExercises;
-        exercisesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
 

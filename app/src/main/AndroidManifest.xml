@@ -10,8 +10,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Snotra"
+        android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.exercises.fear"
+            android:exported="false"
+            android:label="Грусть/Страх"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.wrath"
+            android:exported="false"
+            android:label="Гнев"
+            android:parentActivityName=".ActivityMain"/>
         <activity
             android:name=".ActivityMain"
             android:exported="true"

@@ -6,17 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".ui.exercises.FragmentExercises">
 
-    <TextView
-        android:id="@+id/text_exercises"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/wrath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="wrath"
+                android:text="Гнев" />
+
+            <Button
+                android:id="@+id/fear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fear"
+                android:text="Грусть/Страх" />
+
+            <Button
+                android:id="@+id/kontrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrol"
+                android:text="Контроль" />
+
+            <Button
+                android:id="@+id/lostness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lostness"
+                android:text="Потерянность" />
+
+            <Button
+                android:id="@+id/selfhatred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selfhatred"
+                android:text="Ненависть  к себе" />
+
+            <Button
+                android:id="@+id/selfharm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selfharm"
+                android:text="Самоповреждение" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
