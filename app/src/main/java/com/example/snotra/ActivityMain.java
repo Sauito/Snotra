@@ -3,12 +3,12 @@ package com.example.snotra;
 import android.os.Bundle;
 
 
-import com.example.snotra.ui.exercises.fear;
-import com.example.snotra.ui.exercises.kontrol;
-import com.example.snotra.ui.exercises.lostness;
-import com.example.snotra.ui.exercises.selfharming;
-import com.example.snotra.ui.exercises.selfhatred;
-import com.example.snotra.ui.exercises.wrath;
+import com.example.snotra.ui.exercises.group.fear;
+import com.example.snotra.ui.exercises.group.kontrol;
+import com.example.snotra.ui.exercises.group.lostness;
+import com.example.snotra.ui.exercises.group.selfharming;
+import com.example.snotra.ui.exercises.group.selfhatred;
+import com.example.snotra.ui.exercises.group.wrath;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;

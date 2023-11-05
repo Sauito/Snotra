@@ -1,4 +1,4 @@
-package com.example.snotra.ui.exercises;
+package com.example.snotra.ui.exercises.group;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,12 +9,13 @@ import android.widget.ListView;
 import com.example.snotra.R;
 
 public class fear extends AppCompatActivity {
-    private ListView fearlist;
-    private String[] array;
-    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ListView fearlist;
+        String[] array;
+        ArrayAdapter<String> adapter;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fear);
         fearlist = findViewById(R.id.fearList);

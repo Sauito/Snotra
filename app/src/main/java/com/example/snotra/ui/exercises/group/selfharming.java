@@ -1,4 +1,4 @@
-package com.example.snotra.ui.exercises;
+package com.example.snotra.ui.exercises.group;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,12 +9,12 @@ import android.widget.ListView;
 import com.example.snotra.R;
 
 public class selfharming extends AppCompatActivity {
-    private ListView selfharmingList;
-    private String[] array;
-    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ListView selfharmingList;
+        String[] array;
+        ArrayAdapter<String> adapter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selfharming);
         selfharmingList = findViewById(R.id.selfharmingList);

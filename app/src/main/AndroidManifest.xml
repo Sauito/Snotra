@@ -13,39 +13,38 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
         <activity
-            android:name=".ui.exercises.kontrol"
+            android:name=".ui.exercises.group.kontrol"
             android:exported="false"
             android:label="@string/exercise_kontrol"
             android:parentActivityName=".ActivityMain"/>
         <activity
-            android:name=".ui.exercises.selfharming"
+            android:name=".ui.exercises.group.selfharming"
             android:exported="false"
             android:label="@string/exercise_selfharming"
             android:parentActivityName=".ActivityMain"/>
         <activity
-            android:name=".ui.exercises.selfhatred"
+            android:name=".ui.exercises.group.selfhatred"
             android:exported="false"
             android:label="@string/exercise_selfhatred"
             android:parentActivityName=".ActivityMain"/>
         <activity
-            android:name=".ui.exercises.lostness"
+            android:name=".ui.exercises.group.lostness"
             android:exported="false"
             android:label="@string/exercise_lostness"
             android:parentActivityName=".ActivityMain"/>
         <activity
-            android:name=".ui.exercises.fear"
+            android:name=".ui.exercises.group.fear"
             android:exported="false"
             android:label="@string/exercise_fear"
             android:parentActivityName=".ActivityMain" />
         <activity
-            android:name=".ui.exercises.wrath"
+            android:name=".ui.exercises.group.wrath"
             android:exported="false"
             android:label="@string/exercise_wrath"
             android:parentActivityName=".ActivityMain" />
         <activity
             android:name=".ActivityMain"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

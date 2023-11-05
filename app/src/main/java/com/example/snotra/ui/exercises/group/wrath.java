@@ -1,21 +1,21 @@
-package com.example.snotra.ui.exercises;
+package com.example.snotra.ui.exercises.group;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.snotra.R;
 
 public class wrath extends AppCompatActivity {
-private ListView wrathlist;
-private String[] array;
-private ArrayAdapter <String> adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ListView wrathlist;
+        String[] array;
+        ArrayAdapter <String> adapter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wrath);
         wrathlist = findViewById(R.id.wrathList);
