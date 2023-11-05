@@ -20,42 +20,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="wrath"
-                android:text="Гнев" />
+                android:text="@string/exercise_wrath" />
 
             <Button
                 android:id="@+id/fear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="fear"
-                android:text="Грусть/Страх" />
+                android:text="@string/exercise_fear" />
 
             <Button
                 android:id="@+id/kontrol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="kontrol"
-                android:text="Контроль" />
+                android:text="@string/exercise_kontrol" />
 
             <Button
                 android:id="@+id/lostness"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="lostness"
-                android:text="Потерянность" />
+                android:text="@string/exercise_lostness" />
 
             <Button
                 android:id="@+id/selfhatred"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="selfhatred"
-                android:text="Ненависть  к себе" />
+                android:text="@string/exercise_selfhatred" />
 
             <Button
-                android:id="@+id/selfharm"
+                android:id="@+id/selfharming"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="selfharm"
-                android:text="Самоповреждение" />
+                android:onClick="selfharming"
+                android:text="@string/exercise_selfharming" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

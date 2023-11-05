@@ -4,20 +4,19 @@ import android.os.Bundle;
 
 
 import com.example.snotra.ui.exercises.fear;
+import com.example.snotra.ui.exercises.kontrol;
+import com.example.snotra.ui.exercises.lostness;
+import com.example.snotra.ui.exercises.selfharming;
+import com.example.snotra.ui.exercises.selfhatred;
 import com.example.snotra.ui.exercises.wrath;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.fragment.app.FragmentManager;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.content.Intent;
 
@@ -53,6 +52,21 @@ public class ActivityMain extends AppCompatActivity {
     public void fear (View view){
         Intent intent = new Intent(this, fear.class);
         startActivity(intent);
- }
-
+    }
+    public void kontrol (View view) {
+        Intent intent = new Intent(this, kontrol.class);
+        startActivity(intent);
+    }
+    public void lostness (View view) {
+        Intent intent = new Intent(this, lostness.class);
+        startActivity(intent);
+    }
+    public void selfharming (View view) {
+        Intent intent = new Intent(this, selfharming.class);
+        startActivity(intent);
+    }
+    public void selfhatred (View view) {
+        Intent intent = new Intent(this, selfhatred.class);
+        startActivity(intent);
+    }
 }

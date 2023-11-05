@@ -13,15 +13,35 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
         <activity
+            android:name=".ui.exercises.kontrol"
+            android:exported="false"
+            android:label="@string/exercise_kontrol"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.selfharming"
+            android:exported="false"
+            android:label="@string/exercise_selfharming"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.selfhatred"
+            android:exported="false"
+            android:label="@string/exercise_selfhatred"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.lostness"
+            android:exported="false"
+            android:label="@string/exercise_lostness"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
             android:name=".ui.exercises.fear"
             android:exported="false"
-            android:label="Грусть/Страх"
-            android:parentActivityName=".ActivityMain"/>
+            android:label="@string/exercise_fear"
+            android:parentActivityName=".ActivityMain" />
         <activity
             android:name=".ui.exercises.wrath"
             android:exported="false"
-            android:label="Гнев"
-            android:parentActivityName=".ActivityMain"/>
+            android:label="@string/exercise_wrath"
+            android:parentActivityName=".ActivityMain" />
         <activity
             android:name=".ActivityMain"
             android:exported="true"
