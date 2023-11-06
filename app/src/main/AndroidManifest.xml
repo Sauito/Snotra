@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.DayNight"
+        android:theme="@style/Theme.Snotra"
         tools:targetApi="31">
         <activity
             android:name=".SettingsActivity"
@@ -28,8 +28,39 @@
             android:label="Статья1"
             android:parentActivityName=".ActivityMain" />
         <activity
+            android:name=".ui.exercises.group.kontrol"
+            android:exported="false"
+            android:label="@string/exercise_kontrol"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.group.selfharming"
+            android:exported="false"
+            android:label="@string/exercise_selfharming"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.group.selfhatred"
+            android:exported="false"
+            android:label="@string/exercise_selfhatred"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.group.lostness"
+            android:exported="false"
+            android:label="@string/exercise_lostness"
+            android:parentActivityName=".ActivityMain"/>
+        <activity
+            android:name=".ui.exercises.group.fear"
+            android:exported="false"
+            android:label="@string/exercise_fear"
+            android:parentActivityName=".ActivityMain" />
+        <activity
+            android:name=".ui.exercises.group.wrath"
+            android:exported="false"
+            android:label="@string/exercise_wrath"
+            android:parentActivityName=".ActivityMain" />
+        <activity
             android:name=".ActivityMain"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

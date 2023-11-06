@@ -4,6 +4,13 @@
     <string name="title_exercises">"Упражнения"</string>
     <string name="title_diary">"Дневник"</string>
     <string name="title_articles">"Статьи"</string>
+
+    <string name="exercise_kontrol">Отсутствие контроля</string>
+    <string name="exercise_selfharming">Желание навредить</string>
+    <string name="exercise_selfhatred">Ненависть к себе</string>
+    <string name="exercise_lostness">Потерянность</string>
+    <string name="exercise_fear">Грусть/Страх</string>
+    <string name="exercise_wrath">Гнев</string>
     <string name="settings">"Настройки"</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
