@@ -1,6 +1,12 @@
 package com.example.snotra;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+import com.example.snotra.databinding.ActivityMainBinding;
 import com.example.snotra.ui.articles.articles1;
 
 
@@ -12,16 +18,10 @@ import com.example.snotra.ui.exercises.group.selfhatred;
 import com.example.snotra.ui.exercises.group.wrath;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.fragment.app.FragmentManager;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import com.example.snotra.databinding.ActivityMainBinding;
 
 public class ActivityMain extends AppCompatActivity {
 
@@ -68,7 +68,7 @@ startActivity(intent);
                 return true;
             }
             else if (itemId == R.id.item_first_aid) {
-               Intent intent = new Intent(this, FirstAid.class);
+               Intent intent = new Intent(this, FirstAidActivity.class);
                startActivity(intent);
                 return true;
             }
@@ -99,4 +99,4 @@ startActivity(intent);
         Intent intent = new Intent(this, selfhatred.class);
         startActivity(intent);
     }
-}
+} 

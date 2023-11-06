@@ -39,4 +39,26 @@
         <item>Наклейте пластыри на места, где вы хотели себе навредить</item>
         <item>Нарисуйте фломастером на себе/Рисунке повреждения</item>
     </string-array>
+
+    <string-array name="theme_entries">
+        <item>Тёмная</item>
+        <item>Белая</item>
+        <item>Ещё тема</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="first_aid_titles">
+        <item>Порез</item>
+        <item>Ожог</item>
+        <item>Ушиб</item>
+        <item>Шок</item>
+        <item>Последующий уход</item>
+        <item>Аптечка</item>
+        <item>Шрамы</item>
+    </string-array>
+
 </resources>

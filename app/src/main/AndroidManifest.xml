@@ -18,7 +18,7 @@
             android:label="Настройки"
             android:parentActivityName="com.example.snotra.ActivityMain"/>
         <activity
-            android:name=".FirstAid"
+            android:name=".FirstAidActivity"
             android:exported="false"
             android:label="Первая помощь"
             android:parentActivityName="com.example.snotra.ActivityMain"/>
