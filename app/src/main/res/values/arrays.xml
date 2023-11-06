@@ -41,8 +41,8 @@
     </string-array>
 
     <string-array name="theme_entries">
+        <item>Светлая</item>
         <item>Тёмная</item>
-        <item>Белая</item>
         <item>Ещё тема</item>
     </string-array>
     <string-array name="theme_values">
