@@ -38,18 +38,19 @@ public class CustomExpandableListAdapter extends  BaseExpandableListAdapter {
     }
 
     @Override
-    public Object getChild(int groupPosition, int childPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(groupPosition)).get(childPosition);
+    public Object getChild(int listPosition, int expandedListPosition) {
+        return this.expandableListDetail.get(this.expandableListTitle
+                .get(listPosition)).get(expandedListPosition);
     }
 
     @Override
-    public long getGroupId(int groupPosition) {
-        return groupPosition;
+    public long getGroupId(int listPosition) {
+        return listPosition;
     }
 
     @Override
-    public long getChildId(int groupPosition, int childPosition) {
-        return childPosition;
+    public long getChildId(int listPosition, int expandedListPosition) {
+        return expandedListPosition;
     }
 
     @Override
@@ -74,20 +75,20 @@ public class CustomExpandableListAdapter extends  BaseExpandableListAdapter {
 
     @Override
     public View getChildView(int listPosition, final int expandedListPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        final String expandenListText=(String) getChild(listPosition,expandedListPosition);
-        if (convertView==null){
+        final String expandedListText = (String) getChild(listPosition, expandedListPosition);
+        if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=layoutInflater.inflate(R.layout.listgroup,null);
+            convertView = layoutInflater.inflate(R.layout.listitem, null);
         }
         TextView expandedListTextView = (TextView) convertView
                 .findViewById(R.id.first_aid_ListItem);
-        expandedListTextView.setText(expandenListText);
+        expandedListTextView.setText(expandedListText);
         return convertView;
     }
 
     @Override
-    public boolean isChildSelectable(int groupPosition, int childPosition) {
+    public boolean isChildSelectable(int listPosition, int expandedListPosition) {
         return true;
     }
 }

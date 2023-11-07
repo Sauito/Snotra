@@ -3,6 +3,7 @@ package com.example.snotra;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
@@ -21,15 +22,31 @@ public class FirstAidActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_aid);
-        expandableListView = findViewById(R.id.firstAidListView);
+        expandableListView = (ExpandableListView) findViewById(R.id.firstAidListView);
         expandableListDetail = ExpandableListData.getData();
-        expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
+        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
         expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, expandableListDetail);
         expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setOnGroupExpandListener(groupPosition -> {
-        });
-        expandableListView.setOnGroupCollapseListener(groupPosition -> {
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
 
+            @Override
+            public void onGroupExpand(int groupPosition) {
+            }
         });
-        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> false);
-}}
+
+        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+            }
+        });
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                return false;
+            }
+        });
+    }
+
+}
