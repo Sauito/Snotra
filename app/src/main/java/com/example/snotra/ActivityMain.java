@@ -16,6 +16,7 @@ import com.example.snotra.ui.exercises.group.lostness;
 import com.example.snotra.ui.exercises.group.selfharming;
 import com.example.snotra.ui.exercises.group.selfhatred;
 import com.example.snotra.ui.exercises.group.wrath;
+import com.example.snotra.ui.first_aid.FirstAidActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;

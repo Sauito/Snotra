@@ -1,4 +1,4 @@
-package com.example.snotra;
+package com.example.snotra.ui.first_aid;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
+
+import com.example.snotra.R;
 
 public class CustomExpandableListAdapter extends  BaseExpandableListAdapter {
     private Context context;

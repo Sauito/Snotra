@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        app:icon="@drawable/ic_diary_black_24dp"
+        app:icon="@drawable/theme_light_dark"
         app:title="Основные">
         <ListPreference
             app:defaultValue="1"

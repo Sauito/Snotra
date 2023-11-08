@@ -12,6 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Настройки"
-        android:icon="@android:drawable/ic_menu_manage"
+        android:icon="?attr/CogIcon"
         app:showAsAction="ifRoom" />
 </menu>

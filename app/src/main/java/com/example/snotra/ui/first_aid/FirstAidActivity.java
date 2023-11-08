@@ -1,4 +1,4 @@
-package com.example.snotra;
+package com.example.snotra.ui.first_aid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+
+import com.example.snotra.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

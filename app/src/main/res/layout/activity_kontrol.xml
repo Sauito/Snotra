@@ -4,8 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.exercises.group.kontrol">
+
     <ListView
         android:id="@+id/kontrolList"
+        style="@style/Widget.Snotra.ListViewStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

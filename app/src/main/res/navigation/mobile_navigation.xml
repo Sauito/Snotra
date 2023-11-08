@@ -27,14 +27,4 @@
         android:name="com.example.snotra.ui.articles.FragmentArticles"
         android:label="@string/title_articles"
         tools:layout="@layout/fragment_articles" />
-    <fragment
-        android:id="@+id/first_aid"
-        android:name="com.example.snotra.ui.first_aid.first_aid"
-        android:label="fragment_first_aid"
-        tools:layout="@layout/fragment_first_aid" />
-    <fragment
-        android:id="@+id/settings2"
-        android:name="com.example.snotra.ui.settings.settings"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
 </navigation>

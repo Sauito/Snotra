@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="invisible"
     tools:context=".ui.articles.FragmentArticles">
 
     <ScrollView
@@ -19,56 +20,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="articles1"
-                android:text="Статья1" />
+                android:text="Статья 1" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья2" />
+                android:text="Статья 2"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья3" />
+                android:text="Статья 3"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья4" />
+                android:text="Статья 4"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья5" />
+                android:text="Статья 5"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья6" />
+                android:text="Статья 6"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья7" />
+                android:text="Статья 7"
+                tools:visibility="invisible" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья8" />
+                android:text="Статья 8"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статья9" />
-
+                android:text="Статья 9"
+                android:visibility="invisible" />
+            <!--
             <Button
                 android:id="@+id/button10"
                 android:layout_width="match_parent"
@@ -116,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Статья17" />
-
+!-->
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstAidActivity">
+    android:background="?attr/BackgroundColor"
+    android:scrollbars="horizontal"
+    tools:context=".ui.first_aid.FirstAidActivity">
 
     <TextView
         android:id="@+id/text_title_first_aid"
+        style="@style/Widget.Snotra.TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="180dp"
+        android:fontFamily="@font/roboto"
         android:text="@string/first_aid_head_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="190dp"
+        android:groupIndicator="@null"
         android:choiceMode="singleChoice"
         android:dividerHeight="0.5dp"
         app:layout_constraintBottom_toBottomOf="parent"
