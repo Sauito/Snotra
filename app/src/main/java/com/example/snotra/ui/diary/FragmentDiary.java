@@ -23,9 +23,6 @@ public class FragmentDiary extends Fragment {
 
         binding = FragmentDiaryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textDiary;
-        diaryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
