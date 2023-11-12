@@ -1,10 +1,13 @@
 package com.example.snotra;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
 
 import com.example.snotra.databinding.ActivityMainBinding;
 import com.example.snotra.ui.articles.articles1;
@@ -48,10 +51,7 @@ public class ActivityMain extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
-public void articles1 (View view){
-    Intent intent = new Intent(this, articles1.class);
-startActivity(intent);
-}
+
 
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
@@ -76,6 +76,11 @@ startActivity(intent);
             return super.onOptionsItemSelected(item);
         }
 
+
+    public void articles1 (View view){
+        Intent intent = new Intent(this, articles1.class);
+        startActivity(intent);
+    }
     public void wrath (View view){
         Intent intent = new Intent(this, wrath.class);
                 startActivity(intent);

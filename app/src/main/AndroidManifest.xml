@@ -9,6 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Snotra"
         tools:targetApi="31">
@@ -16,51 +17,61 @@
             android:name=".SettingsActivity"
             android:exported="false"
             android:label="Настройки"
-            android:parentActivityName="com.example.snotra.ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.first_aid.FirstAidActivity"
             android:exported="false"
             android:label="Первая помощь"
-            android:parentActivityName="com.example.snotra.ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.articles.articles1"
             android:exported="false"
             android:label="Статья1"
-            android:parentActivityName=".ActivityMain" />
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.kontrol"
             android:exported="false"
             android:label="@string/exercise_kontrol"
-            android:parentActivityName=".ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.selfharming"
             android:exported="false"
             android:label="@string/exercise_selfharming"
-            android:parentActivityName=".ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.selfhatred"
             android:exported="false"
             android:label="@string/exercise_selfhatred"
-            android:parentActivityName=".ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.lostness"
             android:exported="false"
             android:label="@string/exercise_lostness"
-            android:parentActivityName=".ActivityMain"/>
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.fear"
             android:exported="false"
             android:label="@string/exercise_fear"
-            android:parentActivityName=".ActivityMain" />
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.exercises.group.wrath"
             android:exported="false"
             android:label="@string/exercise_wrath"
-            android:parentActivityName=".ActivityMain" />
+            android:parentActivityName=".ActivityMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ActivityMain"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,9 +79,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
