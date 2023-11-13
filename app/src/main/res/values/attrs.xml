@@ -3,7 +3,8 @@
     <declare-styleable name="customAttrs">
     <attr name="CogIcon" format="reference" />
     <attr name="BackgroundImage" format="reference" />
-    <attr name="BackgroundColor" format="reference"/><attr name="TextTitleColor" format="reference"/>
+    <attr name="BackgroundColor" format="reference"/>
+    <attr name="TextTitleColor" format="reference"/>
 
 </declare-styleable>
 </resources>

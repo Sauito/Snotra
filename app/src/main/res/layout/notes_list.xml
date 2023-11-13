@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notes_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/yellow_1"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/diaryTextView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/dark_1"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true">
+        </TextView>
+        <ImageView
+            android:id="@+id/diaryImageView_pin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/star_icon"
+            android:layout_alignParentRight="true">
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/diaryTextView_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:text="Note"
+        android:textColor="@color/green_2"
+        android:maxLines="50">
+    </TextView>
+    <TextView
+        android:id="@+id/diaryTextView_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:text="Date"
+        android:textColor="@color/green_1"
+        android:maxLines="50"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:scrollHorizontally="true">
+    </TextView>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
