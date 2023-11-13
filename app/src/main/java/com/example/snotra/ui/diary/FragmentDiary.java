@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -19,7 +18,7 @@ import com.example.snotra.R;
 import com.example.snotra.databinding.FragmentDiaryBinding;
 import com.example.snotra.ui.diary.Adapter.NotesListAdapter;
 import com.example.snotra.ui.diary.DataBase.RoomDB;
-import com.example.snotra.ui.diary.models.Notes;
+import com.example.snotra.ui.diary.Models.Notes;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

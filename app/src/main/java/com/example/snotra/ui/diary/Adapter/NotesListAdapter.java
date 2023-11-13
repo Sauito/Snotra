@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.snotra.R;
 import com.example.snotra.ui.diary.NotesClickListener;
-import com.example.snotra.ui.diary.models.Notes;
+import com.example.snotra.ui.diary.Models.Notes;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.snotra.ui.diary.models;
+package com.example.snotra.ui.diary.Models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -6,16 +6,16 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(tableName ="notes")
+@Entity(tableName = "name_of_table")
 public class Notes implements Serializable {
     @PrimaryKey(autoGenerate = true)
     int ID = 0;
-    @ColumnInfo (name="title")
+    @ColumnInfo (name = "title")
     String title = "";
-    @ColumnInfo (name="notes")
+    @ColumnInfo (name = "notes")
     String notes = "";
 
-    @ColumnInfo (name="date")
+    @ColumnInfo (name = "date")
     String date="";
 
     @ColumnInfo (name="pinned")
