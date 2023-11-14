@@ -6,6 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".ui.diary.FragmentDiary">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/diary_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:queryHint="Введите текст..."
+        app:iconifiedByDefault="false">
+    </androidx.appcompat.widget.SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_diary"
@@ -13,7 +20,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
@@ -22,9 +29,14 @@
         android:id="@+id/button_add_diary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recycler_diary"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
         android:contentDescription="Button_Add_Note"
         android:src="@drawable/pluc_icon"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 

@@ -16,8 +16,10 @@ public interface MainDAO {
     void insert (Notes notes);
     @Query("SELECT * FROM name_of_table ORDER BY id DESC")
     List<Notes> getAll();
-    @Query("UPDATE name_of_table SET title= :title, notes= :notes WHERE ID= :id")
+    @Query("UPDATE name_of_table SET title = :title, notes = :notes WHERE ID = :id")
     void update (int id, String title, String notes);
     @Delete
     void delete (Notes notes);
+    @Query("UPDATE name_of_table SET pinned = :pin WHERE ID = :id")
+    void pin(int id, boolean pin);
 }
