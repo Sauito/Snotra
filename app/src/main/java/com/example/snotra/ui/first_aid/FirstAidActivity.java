@@ -2,11 +2,13 @@ package com.example.snotra.ui.first_aid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-
+import android.widget.TextView;
 
 
 import com.example.snotra.R;
@@ -21,6 +23,9 @@ public class FirstAidActivity extends AppCompatActivity {
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableListTitle;
     HashMap<String, List<String>> expandableListDetail;
+
+    TextView call1;
+    TextView call2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +58,26 @@ public class FirstAidActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
+        call1 = findViewById(R.id.text_title_first_aid_call1);
+        call2 = findViewById(R.id.text_title_first_aid_call2);
 
-}
+        call1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = "tel:103";
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse(phone));
+                startActivity(intent);
+            }
+        });
+        call2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = "tel:112";
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse(phone));
+                startActivity(intent);
+            }
+        });
+        }
+    }

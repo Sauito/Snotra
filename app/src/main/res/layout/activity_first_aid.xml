@@ -9,15 +9,43 @@
     tools:context=".ui.first_aid.FirstAidActivity">
 
     <TextView
-        android:id="@+id/text_title_first_aid"
+        android:id="@+id/text_title_first_aid_call1"
         style="@style/Widget.Snotra.TextViewStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="185dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/courier_prime"
-        android:text="@string/first_aid_head_text"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/call1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title_first_aid_call2"
+        style="@style/Widget.Snotra.TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/courier_prime"
+        android:text="@string/call2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_first_aid_call1" />
+
+    <TextView
+        android:id="@+id/text_title_first_aid"
+        style="@style/Widget.Snotra.TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/courier_prime"
+        android:text="@string/first_aid_head_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_first_aid_call2" />
 
     <ExpandableListView
         android:id="@+id/firstAidListView"
