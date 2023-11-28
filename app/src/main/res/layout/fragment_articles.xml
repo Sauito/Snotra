@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="articles1"
-                android:text="Статья 1" />
+                android:text="Проявления селфхарма у людей с аутизмом" />
 
             <Button
                 android:id="@+id/button2"
